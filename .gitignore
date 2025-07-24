@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+
+# Ignore everything in the documentation folder
+documentation/*
+
+# Ignore all files in documentation/
+documentation/*
+
+# Except the ones you want to keep
+!documentation/*.pdf
+!documentation/*.tex
+!documentation/*.latex
+!documentation/chapters/*.pdf
+!documentation/chapters/*.tex
+!documentation/chapters/*.latex
+!documentation/chapters/*.md
+!documentation/chapters/

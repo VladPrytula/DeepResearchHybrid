@@ -1,0 +1,26 @@
+### **Chapter 1: Foundations of Semantic Search & The Query-Document Mismatch**
+
+#### **1.1 Intuition: From Keywords to Concepts**
+
+At the dawn of the digital age, information retrieval was a task of lexical matching. A user would provide a set of keywords, and a system would return documents containing those literal strings. This is akin to using the index of a textbook; it is precise, fast, and effective if and only if you know the exact terminology the author used. However, it is brittle. The query "effects of alcohol on the liver" would fail to find a document that expertly discusses "hepatic steatosis due to ethanol consumption." The concepts are identical, but the lexical forms are disjoint.
+
+The modern paradigm, **semantic search**, seeks to transcend this limitation. The goal is to search by *meaning* rather than by *string*. A system capable of semantic search would understand that "alcohol" and "ethanol" are related, and that "hepatic steatosis" is a specific "effect on the liver." It operates not on the shallow surface of words, but in the deep space of concepts.
+
+To achieve this, we must find a way to represent the "meaning" of a piece of text in a way that a computer can manipulate. The language of computers is mathematics, and so we turn to the tools of geometry and analysis. We will endeavor to represent text not as a sequence of characters, but as a point in a high-dimensional geometric space—a **vector**. The core hypothesis is that if we design this space correctly, the geometric distance between two vectors will be inversely proportional to the semantic similarity of the texts they represent.
+
+#### **1.2 Rigor: Vector Spaces, Embedding Functions, and the Cosine Similarity Metric**
+
+To move from intuition to a working system, we must formalize these ideas with mathematical precision. This is the bedrock upon which our entire research agent is constructed.
+
+**Definition 1.1: Corpus and Vocabulary**
+A **corpus**, denoted by $C$, is a collection of documents, $C = \{d_1, d_2, \dots, d_n\}$. The set of all possible text strings (queries or documents) is denoted by $\mathcal{T}$.
+
+**Definition 1.2: Semantic Vector Space**
+A **semantic vector space**, denoted by $V$, is a high-dimensional real vector space $\mathbb{R}^d$, where $d$ is the dimension of the embedding, typically on the order of hundreds or thousands.
+
+The bridge between the world of text and our semantic vector space is the embedding function.
+
+**Definition 1.3: Embedding Function**
+An **embedding function**, denoted by $E$, is a mapping from the space of text strings $\mathcal{T}$ to the semantic vector space $V$.
+$$ E: \mathcal{T} \to V \cong \mathbb{R}^d $$
+This function takes a piece of text (a query, a sentence, a full document) and maps it to a vector
