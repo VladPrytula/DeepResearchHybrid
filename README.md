@@ -3,9 +3,9 @@
 This project implements an autonomous AI agent designed to perform in-depth research on a given query. It transforms a simple question into a comprehensive, structured, and cited Markdown report. The agent operates through a cyclical process of planning, acting, and analyzing, leveraging both large language models and unsupervised machine learning to explore topics, gather information, and synthesize coherent narratives.
 
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
-[![Powered by PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Uses on Azure](https://img.shields.io/badge/Azure-Cloud-0078D4?logo=azure-devops&logoColor=white)](https://azure.microsoft.com/)
+[![Uses Azure](https://img.shields.io/badge/Azure-Cloud-0078D4?logo=azure-devops&logoColor=white)](https://azure.microsoft.com/)
 [![Uses scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Uses OpenAI](https://img.shields.io/badge/OpenAI-API-black?logo=openai&logoColor=white)](https://openai.com/)
 
 ## Core Methodology
 
